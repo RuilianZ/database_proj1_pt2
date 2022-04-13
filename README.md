@@ -23,11 +23,6 @@ After the installation is completed, connect to our postgres database in one of 
   * Note that you should connect to proj1part2 database, not w4111! You can check the current database by: `SELECT current_database();`
   * It will ask for your password, which is included in the e-mail we sent. If you didn't get the message, post a private question on discussion board. You may play with Postgres a little bit before the graded project 1 part 1 is returned to you.
 
-Notes
-
-* If the database cannot handle the number of connections, we may create a second database server (we will let you know!)
-
-<!-- * **Don't forget to stop your VM instance after you're done using it or it will use up your credits!!!** -->
 
 ### Creating your schema
 
@@ -40,15 +35,12 @@ and [data types](http://www.postgresql.org/docs/10/static/datatype.html) may hel
 
 Create the CHECK constraints that you need to express the rest of your real-world constraints.
 
-* Note: PostgreSQL's CHECK constraints are limited ([see the documentation](http://www.postgresql.org/docs/10/static/ddl-constraints.html)), so do what you can.
+* Note: PostgreSQL's CHECK constraints are limited ([see the documentation](http://www.postgresql.org/docs/10/static/ddl-constraints.html)).
 * Note: PostgreSQL doesn't support CREATE ASSERTION statements, but does support triggers.
-However, you are not required to implement constraints that require triggers.
 
 ### Populate the tables
 
 Insert at least 10 realistic/real tuples into each table in your database.
-
-* This should be based on your description in part 1
 
 ### Run some queries
 
@@ -57,7 +49,4 @@ Create at least 3 interesting SELECT queries.  The three queries, together, shou
 * multi-table joins,
 * WHERE clauses, and 
 * aggregation (e.g. COUNT, SUM, MIN, etc). 
-
-Each query does not need to include all of those SQL features.
-
 
